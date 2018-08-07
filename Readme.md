@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Max Gaag](https://up.htmlacademy.ru/htmlcss/22/user/821591).
-* Наставник: `Неизвестно`.
+* Наставник: [Инна Кришталь](https://htmlacademy.ru/profile/id43485).
 
 ---
 
