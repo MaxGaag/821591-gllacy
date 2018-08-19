@@ -25,14 +25,21 @@
 				<ul class="user-navigation">
 	  				<li class="search"><p>Поиск</p>
 	  					<div class="search">
-	      					<p>Что ищем?</p>
+	      					<form method=get>
+	      						<input type="text" id="serch" placeholder="Что ищем?">
+	      					</form>
 	      				</div>	
 	      			</li>
 	  				<li class="login-link"><p>Вход</p>
 	  					<div class="login">
 	      					<h2>Личный кабинет</h2>
-	      место дя формы входа
-	      				<a href="enter.html">Войти</a>
+	     					<form method=post>
+	     						<input type="text" id="user-enter" name="user-enter" placeholder="Электронная почта"><br>
+	     						<input type="password" id="user-password" name="user-password" placeholder="Пароль"><br>
+	     						<input type="submit" value="Войти"><br>
+	     						<a href="forgot-password.html">Забыли пароль?</a><br>
+	     						<a href="regestration.html">Новая регистрация</a>
+	     					</form>
 	      				</div>
 	      			</li>
 	  				<li class="basket"><p>Корзина</p>
@@ -112,6 +119,8 @@
 		       		<a href="blog.html">10 способов сервировки фруктовых шербетов к столу</a>
 		        
 		       		<p class="text-subscription">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=)</p>
+		       		<input type="text" name="subscription" placeholder="Электронная почта">
+		       		<input type=submit value=Отправить>
 	       	</section>
 	       	<section>
 	       		<img src="map.png" wight=90 height=90 alt=карта>
@@ -145,7 +154,13 @@
 		</footer>
 			<section class="modal modal-feedback">
 		      	<h2>Мы обязательно вам ответим!</h2>
-		      	<span class="modal-close">x</span>
+		      	<button class="modal-close">x</button>
+		      	<form method=post>
+		      		<input type="text" id="user-field-id" name="username" placeholder="Ваше имя"><br>
+		      		<input type="text" id="user-mail-id" name="usermail" placeholder="Ваша почта для ответа?"><br>
+		      		<textarea name="writesomething" rows="10" placeholder="Напишите что-нибудь..."></textarea><br>
+		      		<input type="submit" value="Отправить">
+		      	</form>
 		    </section>
 	</body>
 </html>
