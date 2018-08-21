@@ -17,7 +17,7 @@
             <li><a href="creamy.html">Сливочное</a></li>
             <li><a href="fruitice.html">Фруктовый лед</a></li>
             <li><a href="melorin.html">Мелорин</a></li>
-          </ul>
+        </ul>
         </li>
         <li> <a href="Shipping-and-payment.html2">Доставка и оплата</a></li>
         <li> <a href="about-us.html">О компании</a></li>
@@ -25,7 +25,7 @@
       <ul class="user-navigation">
         <li class="search"><p>Поиск</p>
           <div class="search">
-            <form method=get>
+            <form method="get">
               <input type="text" id="search" placeholder="Что ищем?">
               <input type="submit" class="visualy-hidden"  value="search">
             </form>
@@ -34,18 +34,18 @@
         <li class="login-link"><p>Вход</p>
           <div class="login">
             <h2>Личный кабинет</h2>
-            <form method=post>
-              <input type="text" id="user-enter" name="user-enter" placeholder="Электронная почта"><br>
-              <input type="password" id="user-password" name="user-password" placeholder="Пароль"><br>
-              <input type="submit" value="Войти"><br>
-              <a href="forgot-password.html">Забыли пароль?</a><br>
+            <form method="post">
+              <input type="text" id="user-enter" name="user-enter" placeholder="Электронная почта">
+              <input type="password" id="user-password" name="user-password" placeholder="Пароль">
+              <input type="submit" value="Войти">
+              <a href="forgot-password.html">Забыли пароль?</a>
               <a href="regestration.html">Новая регистрация</a>
             </form>
           </div>
         </li>
         <li class="basket">
           <p>Корзина</p>
-          <div class=bascket>
+          <div class="bascket">
             <table>
               <tr>
                 <td>
@@ -82,7 +82,7 @@
                 </td>
               </tr>
               <tr>
-                <td colspan=3>
+                <td colspan="3">
                   <b>Итого:750руб.</b>
                 </td>
               </tr>
@@ -96,7 +96,6 @@
       <p>С 10 до 20, ежедневно<br><a href="tel:+78124502525">8 812 450-25-25</a></p>
     </div>
   </header>
-
   <main class="container">
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
@@ -108,42 +107,43 @@
     <div class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <h3>Сортировка:</h3>
-        <select name="sorting">
-          <option value="by-popularity">По популярности</option>
-          <option value="not-expensive">Не дорогие</option>
-          <option value="expensive">Дорогие</option>
-          <option value="fat-content">По жирности</option>
-        </select>
-        <div class="price-controls">
-          от <input class="min-price" type="text" value="100">
-          до <input class="max-price" type="text" value="500">
-        </div>
+        <fieldset>
+	        <h3>Сортировка:</h3>
+	        <select name="sorting">
+	          <option value="by-popularity">По популярности</option>
+	          <option value="not-expensive">Не дорогие</option>
+	          <option value="expensive">Дорогие</option>
+	          <option value="fat-content">По жирности</option>
+	        </select>
+	        <div class="price-controls">
+	          от <input class="min-price" type="text" value="100">
+	          до <input class="max-price" type="text" value="500">
+	        </div>
+        </fieldset>
         <fieldset>
           <legend>Жирность:</legend>
-          <ul>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" id="filter-0%" name="product-fat" type="radio" value="0%">
-              <label for="filter-0%">0%</label>
+          	<li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" id="filter-0percent" name="product-fat" type="radio" value="0percent">
+              <label for="filter-0percent">0%</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" id="filter-less-than-10%" name="product-fat" type="radio" value="less-than-10%">
-              <label for="filter-less-than-10%">до 10%</label>
+              <input class="visually-hidden filter-input filter-input-radio" id="filter-less-than-10percent" name="product-fat" type="radio" value="less-than-10percent">
+              <label for="filter-less-than-10percent">до 10%</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" id="filter-less-than-30%" name="product-fat" type="radio" value="less-than-30%">
-              <label for="filter-less-than-30%">до 30%</label>
+              <input class="visually-hidden filter-input filter-input-radio" id="filter-less-than-30percent" name="product-fat" type="radio" value="less-than-30percent">
+              <label for="filter-less-than-30percent">до 30%</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" id="filter-more-than-30%" name="product-fat" type="radio" value="more-than-30%">
-              <label for="filter-more-than-30%">выше 30%</label>
+              <input class="visually-hidden filter-input filter-input-radio" id="filter-more-than-30percent" name="product-fat" type="radio" value="more-than-30percent">
+              <label for="filter-more-than-30percent">выше 30%</label>
             </li>
           </ul>
         </fieldset>
         <fieldset>
         <legend>Наполнители:</legend>
           <ul>
-            <li class="filter-option">
+          	<li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" id="filter-chocolate" type="checkbox" checked name="chocolate">
               <label for="filter-chocolate">шоколадные</label>
             </li>
@@ -164,12 +164,11 @@
               <label for="filter-jam">джемы</label>
             </li>
           </ul>
-        </fieldset>
-        <input type=submit value=Применить>
+           </fieldset>
+        <input type="submit" value="Применить">
       </form>
     </div>
-
-    <section class="catalog">
+     <section class="catalog">
       <h2 class="visually-hidden">Список мороженого</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -245,7 +244,7 @@
           </a>
         </li>
         <li class="catalog-item">
-          <a href="catalog-item.htm"l>
+          <a href="catalog-item.html">
             <img src="img/creamy-with-menthol-syrup.jpg" width="150" height="150" alt="Сливочеое с ментоловым сиропом">
           </a>
           <p><b>435р/кг</b></p>
@@ -278,8 +277,7 @@
       </ul>
     </section>
   </main>
-
-  <footer class="pagefooter">
+   <footer class="pagefooter">
     <section class="footer-social">
       <ul>
         <li><a class="social-button" href="twitter.html">Twitter</a></li>
@@ -296,8 +294,8 @@
         <li><a href="standarts.html">Экологические стандарты</a></li>
       </ul>
     </section>
-    <section class="copyright">
-      <p>Сделано в HTML Acadeny ® 2017</p>
-    </section>
+    <div class="copyright">
+		<a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Acadeny ® 2017</a>
+	</div>
   </footer>
 </body>
