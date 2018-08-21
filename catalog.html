@@ -11,10 +11,10 @@
     </a>
     <nav class="main-menu">
       <ul>
-        <li> <a href="catalog.html">Каталог</a>
+        <li><p>Каталог</p>
           <ul>
             <li><a href="novelties.html">Новинки</a></li>
-            <li><a href="creamy.html">Сливочное</a></li>
+            <li><a href="catalog.html">Сливочное</a></li>
             <li><a href="fruitice.html">Фруктовый лед</a></li>
             <li><a href="melorin.html">Мелорин</a></li>
         </ul>
@@ -108,18 +108,21 @@
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-	        <h3>Сортировка:</h3>
+	        <legend>Сортировка:</legend>
 	        <select name="sorting">
 	          <option value="by-popularity">По популярности</option>
 	          <option value="not-expensive">Не дорогие</option>
 	          <option value="expensive">Дорогие</option>
 	          <option value="fat-content">По жирности</option>
 	        </select>
-	        <div class="price-controls">
-	          от <input class="min-price" type="text" value="100">
-	          до <input class="max-price" type="text" value="500">
-	        </div>
-        </fieldset>
+	    </fieldset>    
+	    <div class="price-controls">
+	        <fieldset>
+	        	<legend>Цена:</legend>
+			        от <input class="min-price" type="text" value="100">
+			        до <input class="max-price" type="text" value="500">
+		    </fieldset>
+	    </div>
         <fieldset>
           <legend>Жирность:</legend>
           	<li class="filter-option">
